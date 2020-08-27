@@ -22,7 +22,7 @@ In this example, the evaluation function expects three arguments:
 import argparse
 import os
 
-from toptagger.tagger.main import run_tagger
+from mytagger.tagger.main import run_tagger
 
 
 if __name__ == '__main__':

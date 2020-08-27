@@ -28,7 +28,7 @@ extras_require = {
 
 
 setup(
-    name='toptagger',
+    name='top-tagger-template',
     version='0.1.0',
     description='Template for ML4Jets Top Taggers',
     url='https://github.com/scailfin/rob-demo-top-tagger-template',

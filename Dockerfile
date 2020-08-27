@@ -3,7 +3,7 @@ FROM python:3.8
 RUN pip install --upgrade pip
 
 # Copy source code files
-COPY toptagger /app/toptagger
+COPY mytagger /app/mytagger
 COPY requirements.txt /app/requirements.txt
 COPY setup.py /app/setup.py
 

@@ -16,7 +16,7 @@ In this example, the pre-porcessor expects two arguments:
 import argparse
 import os
 
-from toptagger.preproc.main import run_preproc
+from mytagger.preproc.main import run_preproc
 
 
 if __name__ == '__main__':
