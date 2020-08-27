@@ -43,7 +43,7 @@ If your pre-processor or tagger requires access to additional data files, these 
 
 Make sure to include all dependencies for your Python environment in the requirements.txt file. Before starting development you should run the following commands (from the root directory of the repository) in your virtual Python environment:
 
-.. code-base:: bash
+.. code-block:: bash
 
     pip install -r requirements.txt
     pip install -e .
@@ -54,13 +54,13 @@ Packaging Your Code
 
 When you are finished with testing your code, everything has to be packed into a Docker image. The repository contains a Dockerfile that will do the job for you. Use the following command to create the Docker image (from the root directory of the repository):
 
-.. code-base:: bash
+.. code-block:: bash
 
     docker image build -t mytoptagger .
 
 This will create a Docker image *mytoptagger* on your machine. If this is the same machin on which you are running the ROB framework everything should be fine. Otherwise, you will need to push the image to DockerHub first (see example below):
 
-.. code-base:: bash
+.. code-block:: bash
 
     docker image tag mytoptagger myusername/mytoptagger
     docker image push myusername/mytoptagger
