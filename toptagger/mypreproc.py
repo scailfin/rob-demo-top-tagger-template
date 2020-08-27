@@ -9,7 +9,7 @@ adjust this example to your own requirements.
 
 In this example, the pre-porcessor expects two arguments:
 
---testdata  Pickle file with evaluation test data
+--testdata  Pickle file with test data sample.
 --outfile   Output file for pre-processing results.
 """
 
@@ -34,7 +34,7 @@ if __name__ == '__main__':
     parser.add_argument(
         '-t', '--testdata',
         required=True,
-        help='Evaluation test data file.'
+        help='Test data sample file.'
     )
     parser.add_argument(
         '-o', '--outfile',

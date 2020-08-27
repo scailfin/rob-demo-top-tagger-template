@@ -4,21 +4,22 @@
 # ROB is free software; you can redistribute it and/or modify it under the
 # terms of the MIT License; see LICENSE file for more details.
 
-"""Main evaluation routine. Adjust to your specific requirements."""
+"""Main tagger routine. Adjust to your specific requirements."""
 
 import numpy as np
 import pickle
 import random
 
 
-def run_eval(datafile, weightsfile, resultfile, runs=5):
-    """Dummy evaluation routine. Reads the weights file to ensure that it is
+def run_tagger(datafile, weightsfile, resultfile, runs=5):
+    """Dummy tagger routine. Reads the weights file to ensure that it is
     accessible. Then generates a random result file.
 
     Parameters
     ----------
     datafile: string
-        Path to file with pickled test data or result of pre-processing step.
+        Path to file with pickled test data sampleor result of pre-processing
+        step.
     weightsfile: string
         Path to additional input file. Included for demonstration purposes.
         Remove if not needed.
