@@ -21,12 +21,12 @@ The idea of `The Machine Learning Landscape of Top Taggers <https://arxiv.org/ab
 The evaluation workflow for the demo consist of 3 steps.
 
 - Pre-Processing: This is an (optional) pre-processing step in which you can transform or adjust the test data sample to fit the the format required by your tagger code. This template contains a dummy implementation for a pre-processor that you can use if your tagger does not require pre-processing but operates on the original test data sample, instead.
-- Tagger: ???
+- Tagger: This is the code for the machine learning based classifier provided by the participants in the Docker container. ROB will call the code that should run the algorithm on evaluation model over the preprocessed test dataset.
 - Scoring: To compare different model outputs, single-number performance metrics are evaluated on the test sample. These metrics include the area under the ROC curve (AUC), and the background rejection at a signal efficiency of 50% the background rejection mean from an ensemble tagger setup.
 
 Participants in the benchmark have to provide an implementation for the tagger and (if required) for the pre-processing step. The final scoring step in the workflow is common to all participants and cannot be changed.
 
-The format of the test data sample is ???. The expected output of the tagger is ???.
+The format of the test data sample is a numpy array with the labels for each jet as signal or background. The expected output of the tagger is an array with similar dimensions and the output probability of each jet to be classified as signal.
 
 The test data sample file is the only file that is available by default to your tagger. All other files that your code may require have to be included in the Docker container (see below for details).
 
